@@ -1,15 +1,16 @@
-const showLink = document.getElementById("show");
-const hideLink = document.getElementById("hide");
-const jsText = document.getElementById("texte");
+document.addEventListener("DOMContentLoaded", function() {
+    const showLink = document.getElementById("show");
+    const hideLink = document.getElementById("hide");
+    const jsText = document.getElementById("texte");
+    
+    
+    showLink.addEventListener("click", function () {
+        jsText.style.display = "block";
+    });
+    hideLink.addEventListener("click", function () {
+        jsText.style.display = "none";
+    });
+});
 
 
-function showhide() {
-    if (jsText.style.display === 'none' || jsText.style.display === '') {
-        jsText.style.display = 'block'; // Show the text
-    } else {
-        jsText.style.display = 'none'; // Hide the text
-    }
-}
-showLink.addEventListener("click", showhide);
-hideLink.addEventListener("click", showhide);
 
