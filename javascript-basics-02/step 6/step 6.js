@@ -1,11 +1,11 @@
-for (let i = 1; i <= 5; i++) {
-    const image = document.querySelector(`#image${i}`);
+const image = document.querySelectorAll("img");;
+for (let i = 0; i < image.length; i++) {
 
-    image.addEventListener("mouseover", function (event) {
-        event.target.src = `images/image${i}_hover.jpg`;
-    });
+    image[i].addEventListener("mouseover", function (event) {
+        event.target.src = `images/image${i+1}_2.jpg`;
 
-    image.addEventListener("mouseout", function (event) {
-        event.target.src = `images/image${i}.jpg`;
+        image[i].addEventListener("mouseout", function (event) {
+            event.target.src = `images/image${i+1}_2.jpg`;
+          });
     });
 }
