@@ -4,7 +4,7 @@ var num3 = num1 * num2;
 
 if (!isNaN(num1) && !isNaN(num2)) {
     let num3 = num1 * num2;
-    alert(num3);
+    alert(num1 + " x " + num2 + " = " + num3);
 } else {
     alert("Enter valid numbers only!")
 };
