@@ -1,6 +1,10 @@
-const firstDiv = document.querySelector("#first-div");
-const userName = document.querySelector("#name");
+
+
+var jsDiv = document.createElement("div");
+jsDiv.textContent = "";
+document.body.appendChild(jsDiv);
+var userName = document.querySelector("#name");
 
 userName.addEventListener("input", function() {
-    firstDiv.textContent = userName.value;
-})
+  jsDiv.textContent = userName.value;
+});
